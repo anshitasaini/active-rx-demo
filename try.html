@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="style2.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--Importing JavaScript wrappers for Tensorflow/Keras-->
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.0/dist/tf.min.js"></script>
+<!--Importing Recorder.js library to record audio in the browser -->
+<script src="https://cdn.rawgit.com/mattdiamond/Recorderjs/08e7abd9/dist/recorder.js"></script>
+
+<body>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
+
+<!-- Header -->
+<div class="w3-opacity">
+<div class="w3-clear"></div>
+<header class="w3-center w3-margin-bottom">
+    <h1><b>ACTIVE-RX</b></h1>
+    <p><b>Doppler Activity Sensing On A Smartphone</b></p>
+</header>
+<p class="w3-padding-24">
+    <!-- <div class="w3-container" id="dv">Output</div>
+    <div class="w3-container" id="1sample">Sample 1</div>
+    <div class="w3-container" id="2sample">Sample 2</div>
+    <div class="w3-container" id="spec">Spectrogram shape: </div>
+    <div class="w3-container" id="samples">Samples: </div> -->
+    <button id="start" class="w3-button w3-black w3-display-middle">Start</button>
+    <button class="w3-button w3-black w3-display-middle" id="stop">Stop</button>
+    <button class="w3-button w3-black w3-display-middle" id="classify">Classify</button>
+    <br>
+    <center>
+        <canvas class="w3-container" id="spectrogram" height="830" width="580">Spectrogram</canvas>
+    </center>
+    <script src="complex_number.js"></script>
+    <script src="signal_processing.js"></script>
+    <script src="model.js"></script>
+    <script src="record2.js"></script> 
+</p>
+</div>  
+
+<!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin-top:84px"> 
+  <p class="w3-medium">Created by Ubiquitous Computing Laboratory, Paul G. Allen School of Computer Science and Engineering, University of Washington - Seattle</p>
+</footer>
+ 
+
+</body>
+</html>
